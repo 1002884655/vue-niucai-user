@@ -1,0 +1,86 @@
+.Page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .PageContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    > nav {
+      align-items: center;
+      border-bottom: 0.01rem solid #f7f7f7;
+      > a {
+        font-size: 0.14rem;
+        line-height: 0.4rem;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        color: #666;
+        &.active {
+          color: #ff5200;
+          &::after {
+            content: "";
+            width: 0.26rem;
+            height: 0.02rem;
+            background: #ff5200;
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            bottom: 0;
+          }
+        }
+      }
+    }
+    > .flex-item {
+      position: relative;
+      overflow: hidden;
+      > div {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+        .Container {
+          ul {
+            padding: 0 0.15rem;
+            > li {
+              align-items: center;
+              padding: 0.1rem 0;
+              border-bottom: 0.01rem solid #f7f7f7;
+              > div {
+                > span {
+                  display: block;
+                  width: 100%;
+                  font-size: 0.12rem;
+                  color: #999;
+                  line-height: 0.2rem;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  &:first-child {
+                    font-size: 0.15rem;
+                    color: #333;
+                    margin-bottom: 0.05rem;
+                  }
+                }
+              }
+              > span {
+                font-size: 0.15rem;
+                font-weight: bold;
+                color: #999;
+                margin-left: 0.1rem;
+                &.active {
+                  color: #ff5200;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

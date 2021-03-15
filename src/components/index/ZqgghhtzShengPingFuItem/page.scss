@@ -1,0 +1,66 @@
+.components.ZqgghhtzShengPingFuItem {
+  align-items: center;
+  margin-top: 0.05rem;
+  > span {
+    font-size: 0.1rem;
+    color: #999;
+    margin-right: 0.4rem;
+  }
+  > div.flex-item {
+    > div.flex-item {
+      position: relative;
+      overflow: hidden;
+      > div.flex-h {
+        margin-top: 0.05rem;
+        align-items: center;
+        &:first-child {
+          margin-top: 0;
+        }
+        > span {
+          font-size: 0.1rem;
+          width: 0.16rem;
+          line-height: 0.16rem;
+          text-align: center;
+          border: 0.01rem solid #999;
+          color: #999;
+          border-radius: 100%;
+          margin-right: 0.1rem;
+          &.Yellow {
+            color: #fff;
+            background: #ff5100;
+            border-color: #ff5100;
+          }
+          &.Blue {
+            color: #fff;
+            background: #3f63e5;
+            border-color: #3f63e5;
+          }
+        }
+        > a {
+          text-align: center;
+          border: 0.01rem solid #999;
+          margin-left: 0.05rem;
+          font-size: 0.13rem;
+          line-height: 0.22rem;
+          &.active {
+            color: #fff;
+            background: #ff5100;
+            border-color: #ff5100;
+          }
+        }
+      }
+    }
+    > a {
+      font-size: 0.1rem;
+      color: #ff5100;
+      line-height: 0.2rem;
+      border: 0.01rem solid #999;
+      margin-left: 0.05rem;
+      position: relative;
+      overflow: hidden;
+      padding: 0 0.02rem;
+      padding-top: 0.04rem;
+      margin-right: 0.2rem;
+    }
+  }
+}

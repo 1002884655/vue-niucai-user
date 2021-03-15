@@ -1,0 +1,45 @@
+.components.ZqgghhtzBanQuanChang {
+  > span {
+    font-size: 0.12rem;
+    line-height: 0.2rem;
+    color: #999;
+    display: block;
+    > em {
+      font-size: 0.12rem;
+      width: 0.16rem;
+      line-height: 0.16rem;
+      text-align: center;
+      background: #ff5100;
+      color: #fff;
+      margin-right: 0.05rem;
+      display: inline-block;
+    }
+  }
+  > table {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0.05rem;
+    border: 0.01rem solid #f7f7f7;
+    > tr {
+      > td {
+        border: 0.01rem solid #f7f7f7;
+        padding: 0.05rem 0;
+        &.active {
+          background: #ff5100;
+          > span {
+            color: #fff;
+          }
+        }
+        > span {
+          display: block;
+          text-align: center;
+          font-size: 0.12rem;
+          line-height: 0.16rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}

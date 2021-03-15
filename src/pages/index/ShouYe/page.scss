@@ -1,0 +1,313 @@
+.Page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .PageContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    > .SafariLayer {
+      width: 100%;
+      position: fixed;
+      bottom: 0.5rem;
+      left: 0;
+      overflow: hidden;
+      z-index: 1000;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.05rem 0;
+      > div {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        align-items: center;
+        z-index: 1;
+        > .Logo {
+          width: 0.5rem;
+          height: 0.5rem;
+          background: #fff;
+          position: relative;
+          overflow: hidden;
+          border-radius: 0.04rem;
+          margin-right: 0.05rem;
+          margin-left: 0.05rem;
+        }
+        > .flex-item {
+          position: relative;
+          overflow: hidden;
+          > span {
+            display: block;
+            font-size: 0.12rem;
+            color: #fff;
+            &:first-child {
+              font-size: 0.16rem;
+              margin-bottom: 0.03rem;
+            }
+          }
+        }
+        > a {
+          font-size: 0.12rem;
+          color: #fff;
+          line-height: 0.3rem;
+          padding: 0 0.2rem;
+          background: #ff5100;
+          border-radius: 0.3rem;
+          margin-right: 0.35rem;
+        }
+      }
+      > i {
+        display: inline-block;
+        position: absolute;
+        right: 0.02rem;
+        top: 0.02rem;
+        color: #fff;
+        font-size: 0.2rem;
+        z-index: 3;
+      }
+    }
+    > .Iframe {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 100;
+      background: #fff;
+      > .Top {
+        position: relative;
+        overflow: hidden;
+        background: #ff5100;
+        > span {
+          display: block;
+          font-size: 0.17rem;
+          text-align: center;
+          position: relative;
+          z-index: 1;
+          line-height: 0.4rem;
+          color: #fff;
+          height: 0.4rem;
+          white-space: nowrap;
+        }
+        > a {
+          display: inline-block;
+          position: absolute;
+          z-index: 2;
+          font-size: 0.2rem;
+          color: #fff;
+          line-height: 0.4rem;
+          left: 0.15rem;
+        }
+      }
+      > .flex-item {
+        position: relative;
+        overflow: hidden;
+        > div {
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          z-index: 100;
+          > iframe {
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+          }
+        }
+      }
+    }
+    > .Bg {
+      width: 200vw;
+      height: 200vw;
+      background: #ff5100;
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      top: -110%;
+      border-radius: 100%;
+    }
+    > .Content {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      z-index: 2;
+      .Container {
+        > .Banner {
+          width: 100%;
+          padding-bottom: 40%;
+          position: relative;
+          overflow: hidden;
+          margin-top: 0.2rem;
+          > div {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            > div {
+              width: 100%;
+              height: 100%;
+              position: relative;
+              overflow: hidden;
+            }
+          }
+        }
+        > .LotteryInfo {
+          background: #f7f7f7;
+          margin-top: 0.1rem;
+          position: relative;
+          overflow: hidden;
+          padding: 0.15rem;
+          > .Title {
+            align-items: center;
+            > span {
+              font-size: 0.12rem;
+              line-height: 0.2rem;
+              position: relative;
+              text-indent: 0.1rem;
+              font-weight: bold;
+              &::after {
+                content: "";
+                width: 0.02rem;
+                height: 0.12rem;
+                background: #ff5100;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+              }
+            }
+            > a {
+              font-size: 0;
+              white-space: nowrap;
+              > * {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 0.12rem;
+                color: #999;
+                line-height: 0.2rem;
+              }
+            }
+          }
+          > .List {
+            font-size: 0;
+            > li {
+              display: inline-block;
+              vertical-align: middle;
+              width: 50%;
+              box-sizing: border-box;
+              position: relative;
+              overflow: hidden;
+              border-bottom: 0.01rem solid #f0f0f0;
+              border-left: 0.01rem solid #f0f0f0;
+              padding: 0.1rem 0;
+              &:nth-child(3),
+              &:nth-child(4) {
+                border-bottom: none;
+              }
+              &:nth-child(1),
+              &:nth-child(3) {
+                border-left: none;
+              }
+              &:nth-child(2n) {
+                padding-left: 0.1rem;
+              }
+              > .Name {
+                font-size: 0;
+                white-space: nowrap;
+                > span {
+                  display: inline-block;
+                  vertical-align: center;
+                  font-size: 0.12rem;
+                  line-height: 0.2rem;
+                  margin-left: 0.1rem;
+                  &:first-child {
+                    margin-left: 0;
+                  }
+                }
+              }
+              > .Num {
+                font-size: 0;
+                white-space: nowrap;
+                margin-top: 0.02rem;
+                > span {
+                  display: inline-block;
+                  vertical-align: center;
+                  font-size: 0.12rem;
+                  line-height: 0.18rem;
+                  width: 0.18rem;
+                  border-radius: 100%;
+                  text-align: center;
+                  background: #ff5100;
+                  margin-left: 0.05rem;
+                  color: #fff;
+                  &:first-child {
+                    margin-left: 0;
+                  }
+                  &.active {
+                    background: #3e62e5;
+                  }
+                }
+              }
+            }
+          }
+        }
+        > .LotteryTypeList {
+          padding: 0.15rem;
+          font-size: 0;
+          > li {
+            display: inline-block;
+            vertical-align: middle;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 0.1rem;
+            border-bottom: 0.01rem solid #f7f7f7;
+            border-left: 0.01rem solid #f7f7f7;
+            &:nth-child(5),
+            &:nth-child(6) {
+              border-bottom: none;
+            }
+            &:nth-child(2n + 1) {
+              border-left: none;
+            }
+            > div {
+              align-items: center;
+              > .Icon {
+                width: 0.4rem;
+                height: 0.4rem;
+                border-radius: 100%;
+                position: relative;
+                overflow: hidden;
+                background: #f7f7f7;
+                margin-right: 0.15rem;
+              }
+              > .flex-item {
+                > span {
+                  display: block;
+                  font-size: 0.13rem;
+                  color: #999;
+                  line-height: 0.2rem;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  &:first-child {
+                    color: #333;
+                    font-size: 0.16rem;
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

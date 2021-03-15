@@ -1,0 +1,358 @@
+.Page {
+  background: #f8f8f8;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .PageContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    > .Store {
+      background: #fff;
+      padding: 0.15rem;
+      box-shadow: 0 0 0.02rem 0.02rem rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+      align-items: center;
+      z-index: 2;
+      > div {
+        position: relative;
+        > div {
+          width: 100%;
+          position: relative;
+          overflow: hidden;
+          > span {
+            display: block;
+            font-size: 0.15rem;
+            font-weight: bold;
+            color: #333;
+            line-height: 0.2rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+      > span {
+        font-size: 0.12rem;
+        color: #999;
+        margin-left: 0.1rem;
+      }
+      > i {
+        font-size: 0.12rem;
+        color: #999;
+      }
+    }
+    > div.flex-item {
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      > div {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        > .Title {
+          position: relative;
+          overflow: hidden;
+          text-align: center;
+          margin-top: 0.15rem;
+          &::after {
+            content: "";
+            display: block;
+            width: 70%;
+            height: 0.01rem;
+            background: #eee;
+            z-index: 1;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+          }
+          > span {
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+            background: #f8f8f8;
+            font-size: 0.15rem;
+            font-weight: bold;
+            line-height: 0.2rem;
+            padding: 0 0.1rem;
+          }
+        }
+        > span {
+          font-size: 0.12rem;
+          color: #999;
+          display: block;
+          line-height: 0.2rem;
+          text-align: center;
+          margin-top: 0.2rem;
+        }
+        > ul {
+          padding: 0.15rem;
+          > li {
+            background: #fff;
+            padding: 0.15rem;
+            box-shadow: 0 0 0.02rem 0.02rem rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.06rem;
+            margin-top: 0.15rem;
+            &:first-child {
+              margin-top: 0;
+            }
+            > a.Close {
+              display: inline-block;
+              position: absolute;
+              right: 0;
+              top: 0;
+              z-index: 2;
+              font-size: 0.16rem;
+              color: #999;
+            }
+            > .Title {
+              font-size: 0;
+              white-space: nowrap;
+              > span {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 0.12rem;
+                color: #333;
+                line-height: 0.2rem;
+                margin-left: 0.1rem;
+                &:first-child {
+                  margin-left: 0;
+                }
+              }
+            }
+            > ul {
+              font-size: 0;
+              > li {
+                display: inline-block;
+                vertical-align: middle;
+                width: 0.3rem;
+                height: 0.3rem;
+                position: relative;
+                overflow: hidden;
+                border-radius: 100%;
+                background: #ff5200;
+                margin-top: 0.1rem;
+                margin-right: 0.05rem;
+                > div {
+                  width: 100%;
+                  > span {
+                    font-size: 0.12rem;
+                    color: #fff;
+                    line-height: 0.14rem;
+                    display: block;
+                    text-align: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+        > div.Tips {
+          padding: 0.15rem 0;
+          > span {
+            display: block;
+            font-size: 0.1rem;
+            color: #666;
+            line-height: 0.2rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+    > div.Bottom {
+      background: #fff;
+      padding: 0.15rem;
+      box-shadow: 0 0 0.02rem 0.02rem rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+      z-index: 2;
+      > div {
+        &:nth-child(1) {
+          align-items: center;
+          > div {
+            position: relative;
+            > div {
+              width: 100%;
+              position: relative;
+              overflow: hidden;
+              > span {
+                display: block;
+                font-size: 0.13rem;
+                color: #333;
+                font-weight: bold;
+                line-height: 0.2rem;
+                > em {
+                  font-size: 0.13rem;
+                  color: #d91d36;
+                  font-weight: bold;
+                  line-height: 0.2rem;
+                }
+              }
+            }
+          }
+          > span {
+            display: inline-block;
+            margin-left: 0.1rem;
+            position: relative;
+            overflow: hidden;
+            border: 0.01rem solid #f7f7f7;
+            border-radius: 0.03rem;
+            font-size: 0;
+            white-space: nowrap;
+            > * {
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 0.14rem;
+              color: #999;
+              line-height: 0.24rem;
+              border-left: 0.01rem solid #f7f7f7;
+              &:first-child {
+                border: none;
+                border-right: 0.01rem solid #f7f7f7;
+              }
+            }
+            > a {
+              width: 0.24rem;
+              text-align: center;
+            }
+            > input {
+              border: none;
+              width: 0.35rem;
+              text-align: center;
+              color: #333;
+              &:disabled {
+                color: #333;
+              }
+            }
+            > span {
+              border: none;
+              margin-right: 0.03rem;
+            }
+          }
+        }
+        &:nth-child(2) {
+          align-items: center;
+          margin-top: 0.15rem;
+          > a {
+            font-size: 0.15rem;
+            line-height: 0.4rem;
+            border: 0.01rem solid #ff5200;
+            color: #ff5200;
+            border-radius: 0.02rem;
+            margin-left: 0.15rem;
+            padding: 0 0.1rem;
+            text-align: center;
+            &:first-child {
+              margin-left: 0;
+            }
+            &.flex-item {
+              color: #fff;
+              background: #ccc;
+              border-color: #ccc;
+              &.active {
+                background: #ff5200;
+                border-color: #ff5200;
+              }
+            }
+          }
+        }
+      }
+    }
+    > div.Layer {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.7);
+      > div {
+        width: 80%;
+        background: #fff;
+        border-radius: 0.06rem;
+        position: relative;
+        overflow: hidden;
+        padding-top: 0.15rem;
+        > span {
+          font-size: 0.14rem;
+          font-weight: bold;
+          color: #000;
+          line-height: 0.3rem;
+          display: block;
+          text-indent: 0.15rem;
+        }
+        > ul {
+          padding: 0 0.15rem;
+          position: relative;
+          overflow: hidden;
+          &.ScrollList {
+            max-height: 2.5rem;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+          }
+          > li {
+            align-items: center;
+            border-top: 0.01rem solid #f7f7f7;
+            &:first-child {
+              border: none;
+            }
+            > div {
+              position: relative;
+              > div {
+                width: 100%;
+                position: relative;
+                > span {
+                  display: block;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  font-size: 0.14rem;
+                  color: #333;
+                  line-height: 0.42rem;
+                }
+              }
+            }
+            > span {
+              font-size: 0.14rem;
+              color: #999;
+              margin-right: 0.1rem;
+            }
+            > i {
+              font-size: 0.2rem;
+              color: #999;
+              &.active {
+                color: #ff5200;
+              }
+            }
+          }
+        }
+        > .Bottom {
+          border-top: 0.01rem solid #f7f7f7;
+          > a {
+            font-size: 0.16rem;
+            line-height: 0.42rem;
+            text-align: center;
+            border-left: 0.01rem solid #f7f7f7;
+            &.active {
+              color: #ff5200;
+            }
+            &:first-child {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

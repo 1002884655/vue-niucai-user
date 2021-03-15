@@ -1,0 +1,176 @@
+.components.LanQiuGuoGuanDaXiaoFen {
+  padding: 0 0.15rem;
+  position: relative;
+  overflow: hidden;
+  > ul {
+    > li {
+      border-top: 0.01rem solid #f7f7f7;
+      padding: 0.15rem 0;
+      &:first-child {
+        border-top: none;
+      }
+      > .Title {
+        align-items: center;
+        > div {
+          position: relative;
+          overflow: hidden;
+          // margin-left: 0.2rem;
+          > div {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            > span {
+              font-size: 0.12rem;
+              color: #333;
+              line-height: 0.2rem;
+              display: block;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        > span {
+          font-size: 0.1rem;
+          color: #999;
+          margin-left: 0.1rem;
+          > em {
+            font-size: 0.1rem;
+            color: #3f63e5;
+          }
+        }
+      }
+      > .Detail {
+        // margin-top: 0.05rem;
+        // align-items: center;
+        // > span {
+        //   font-size: 0.1rem;
+        //   color: #999;
+        //   margin-right: 0.4rem;
+        // }
+        // > div.flex-item {
+        //   align-items: center;
+        //   > div.flex-item {
+        //     position: relative;
+        //     overflow: hidden;
+        //     > a {
+        //       border: 0.01rem solid #999;
+        //       box-sizing: border-box;
+        //       margin-right: 0.05rem;
+        //       > span {
+        //         display: block;
+        //         font-size: 0.13rem;
+        //         line-height: 0.22rem;
+        //         text-align: center;
+        //       }
+        //     }
+        //   }
+        //   > a {
+        //     font-size: 0.1rem;
+        //     color: #ff5100;
+        //     line-height: 0.2rem;
+        //     border: 0.01rem solid #999;
+        //     margin-left: 0.05rem;
+        //     position: relative;
+        //     overflow: hidden;
+        //     padding: 0 0.02rem;
+        //     padding-top: 0.04rem;
+        //     margin-right: 0.2rem;
+        //   }
+        // }
+      }
+    }
+  }
+  > .MoreLayer {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0.7rem;
+    bottom: 0.4rem;
+    background: rgba(0, 0, 0, 0.7);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    > div {
+      padding: 0.15rem;
+      position: relative;
+      overflow: hidden;
+      > div {
+        background: #fff;
+        border-radius: 0.06rem;
+        position: relative;
+        overflow: hidden;
+        > span {
+          display: block;
+          font-size: 0.14rem;
+          text-align: center;
+          line-height: 0.4rem;
+          border-bottom: 0.01rem solid #f7f7f7;
+        }
+        > ul {
+          padding-bottom: 0.15rem;
+          > li {
+            margin-top: 0.1rem;
+            padding: 0 0.15rem;
+            > span {
+              font-size: 0.12rem;
+              line-height: 0.2rem;
+              color: #999;
+              display: block;
+              > em {
+                font-size: 0.12rem;
+                width: 0.16rem;
+                line-height: 0.16rem;
+                text-align: center;
+                background: #ff5100;
+                color: #fff;
+                margin-right: 0.05rem;
+                display: inline-block;
+              }
+            }
+            > table {
+              width: 100%;
+              box-sizing: border-box;
+              margin-top: 0.05rem;
+              border: 0.01rem solid #f7f7f7;
+              > tr {
+                > td {
+                  border: 0.01rem solid #f7f7f7;
+                  padding: 0.05rem 0;
+                  &.active {
+                    background: #ff5100;
+                    > span {
+                      color: #fff;
+                    }
+                  }
+                  > span {
+                    display: block;
+                    text-align: center;
+                    font-size: 0.12rem;
+                    line-height: 0.16rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                  }
+                }
+              }
+            }
+          }
+        }
+        > div {
+          border-top: 0.01rem solid #f7f7f7;
+          margin-top: 0.1rem;
+          > a {
+            font-size: 0.14rem;
+            text-align: center;
+            line-height: 0.4rem;
+            border-left: 0.01rem solid #f7f7f7;
+            &:first-child {
+              border-left: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

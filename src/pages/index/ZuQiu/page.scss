@@ -1,0 +1,166 @@
+.Page {
+  background: #f8f8f8;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .PageContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    > .HideNav {
+      width: 100%;
+      position: absolute;
+      z-index: 3;
+      background: #fff;
+      left: 0;
+      top: 0;
+      bottom: 0.4rem;
+      display: none;
+      box-shadow: 0 0 0.02rem 0.02rem rgba(0, 0, 0, 0.03);
+      &.active {
+        display: block;
+      }
+      > div {
+        padding: 0.1rem 0.15rem 0;
+        > span {
+          display: block;
+          font-size: 0.16rem;
+          line-height: 0.3rem;
+          margin-top: 0.1rem;
+          margin-bottom: 0.1rem;
+        }
+        > nav {
+          font-size: 0;
+          > a {
+            display: inline-block;
+            font-size: 0.14rem;
+            line-height: 0.3rem;
+            padding: 0 0.15rem;
+            border: 0.01rem solid #333;
+            border-radius: 0.3rem;
+            margin-right: 0.1rem;
+            margin-bottom: 0.1rem;
+            &.active {
+              border-color: #ff5200;
+              color: #fff;
+              background: #ff5200;
+            }
+          }
+        }
+      }
+    }
+    > .Top {
+      background: #fff;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 0 0.02rem 0.02rem rgba(0, 0, 0, 0.03);
+      > .Time {
+        align-items: center;
+        border-bottom: 0.01rem solid #f7f7f7;
+        > .Icon {
+          width: 0.16rem;
+          height: 0.16rem;
+          position: relative;
+          overflow: hidden;
+          margin-left: 0.15rem;
+          margin-right: 0.25rem;
+        }
+        > .flex-item {
+          position: relative;
+          > div {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            font-size: 0;
+            white-space: nowrap;
+            text-align: right;
+            > span {
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 0.12rem;
+              color: #9a9a9a;
+              line-height: 0.28rem;
+              &.active {
+                color: #ff5200;
+              }
+              &:only-child {
+                margin-right: 0.15rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    > .flex-item {
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      > div {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+        > div {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          overflow-y: scroll;
+          -webkit-overflow-scrolling: touch;
+          background: #fff;
+          > .SelectArea {
+            position: relative;
+            overflow: hidden;
+            min-height: 100%;
+          }
+        }
+      }
+    }
+    > .Bottom {
+      background: #fff;
+      padding: 0.05rem 0.15rem;
+      align-items: center;
+      position: relative;
+      overflow: visible;
+      z-index: 2;
+      box-shadow: 0 0 0.02rem 0.02rem rgba(0, 0, 0, 0.03);
+      > .SelectRes {
+        display: inline-block;
+        position: absolute;
+        right: 0.15rem;
+        top: -0.3rem;
+        font-size: 0.12rem;
+        line-height: 0.3rem;
+        > em {
+          color: #d91e36;
+          font-weight: bold;
+        }
+      }
+      > .iconfont {
+        font-size: 0.24rem;
+        color: #ff5200;
+        margin-right: 0.1rem;
+      }
+      > .flex-item {
+        position: relative;
+      }
+      > .Btn {
+        line-height: 0.28rem;
+        font-size: 0.13rem;
+        color: #ff5200;
+        border: 0.01rem solid #ff5200;
+        border-radius: 0.02rem;
+        margin-left: 0.15rem;
+        min-width: 0.7rem;
+        text-align: center;
+        &:last-child {
+          color: #fff;
+          background: #ff5200;
+        }
+      }
+    }
+  }
+}

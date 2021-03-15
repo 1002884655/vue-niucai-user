@@ -1,0 +1,21 @@
+.components.ZqgghhtzBiFenItem {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  font-size: 0;
+  > a {
+    display: inline-block;
+    font-size: 0.12rem;
+    width: 0.7rem;
+    text-align: center;
+    border: 0.01rem solid #ccc;
+    margin-top: 0.05rem;
+    margin-left: 0.05rem;
+    line-height: 0.24rem;
+    &.active {
+      background: #ff5100;
+      border-color: #ff5100;
+      color: #fff;
+    }
+  }
+}

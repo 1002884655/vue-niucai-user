@@ -1,0 +1,127 @@
+.Page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .PageContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    .Container {
+      > ul {
+        padding: 0 0.15rem;
+        > li {
+          align-items: center;
+          border-bottom: 0.01rem solid #f7f7f7;
+          padding: 0.18rem 0;
+          > * {
+            margin-left: 0.15rem;
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+          > .Icon {
+            width: 0.4rem;
+            height: 0.4rem;
+            border-radius: 100%;
+            background: #f7f7f7;
+            position: relative;
+            overflow: hidden;
+          }
+          > span {
+            font-size: 0.16rem;
+            font-weight: bold;
+            color: #333;
+            min-width: 0.5rem;
+          }
+          > .flex-item {
+            &.Small {
+              > div {
+                &:first-child {
+                  > span {
+                    &:first-child {
+                      display: block;
+                      width: 100%;
+                      font-size: 0.1rem;
+                      color: #999;
+                      white-space: nowrap;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                    }
+                  }
+                }
+              }
+            }
+            > div {
+              &:first-child {
+                font-size: 0;
+                white-space: nowrap;
+                > span {
+                  display: inline-block;
+                  vertical-align: middle;
+                  font-size: 0.14rem;
+                  color: #999;
+                  margin-left: 0.15rem;
+                  line-height: 0.2rem;
+                  &:first-child {
+                    color: #656565;
+                    margin-left: 0;
+                  }
+                }
+              }
+              &.Res {
+                margin-top: 0.1rem;
+                > span {
+                  display: block;
+                  width: 100%;
+                  font-size: 0.12rem;
+                  color: #999;
+                  line-height: 0.2rem;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  > em {
+                    color: #ff5100;
+                    font-weight: bold;
+                    margin-left: 0.1rem;
+                    margin-right: 0.1rem;
+                  }
+                }
+              }
+              &.Num {
+                font-size: 0;
+                white-space: nowrap;
+                margin-top: 0.1rem;
+                > span {
+                  display: inline-block;
+                  vertical-align: middle;
+                  width: 0.2rem;
+                  height: 0.2rem;
+                  line-height: 0.2rem;
+                  border-radius: 100%;
+                  margin-left: 0.05rem;
+                  color: #fff;
+                  font-size: 0.1rem;
+                  background: #ff5100;
+                  text-align: center;
+                  &.active {
+                    background: #3f63e5;
+                  }
+                  &:first-child {
+                    margin-left: 0;
+                  }
+                }
+              }
+            }
+          }
+          > i {
+            font-size: 0.2rem;
+            color: #d7d7d7;
+            margin-left: 0.1rem;
+          }
+        }
+      }
+    }
+  }
+}

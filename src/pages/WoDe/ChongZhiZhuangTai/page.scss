@@ -1,0 +1,43 @@
+.Page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .PageContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    > div {
+      width: 100%;
+      text-align: center;
+      > i {
+        font-size: 1rem;
+        color: #f10404;
+        &.active {
+          color: #39ce09;
+        }
+      }
+      > span {
+        display: block;
+        text-align: center;
+        font-size: 0.14rem;
+        line-height: 0.2rem;
+        margin-top: 0.2rem;
+        + a {
+          margin-top: 0.4rem;
+        }
+      }
+      > a {
+        width: 80%;
+        display: block;
+        font-size: 0.14rem;
+        color: #fff;
+        line-height: 0.4rem;
+        border-radius: 0.06rem;
+        background: #ff5100;
+        margin: 0.2rem auto 0;
+      }
+    }
+  }
+}

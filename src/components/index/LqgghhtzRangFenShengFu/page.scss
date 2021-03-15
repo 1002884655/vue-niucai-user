@@ -1,0 +1,41 @@
+.components.LqgghhtzRangFenShengFu {
+  margin-top: 0.05rem;
+  align-items: center;
+  > span {
+    font-size: 0.1rem;
+    color: #999;
+    margin-right: 0.2rem;
+  }
+  > div.flex-item {
+    align-items: center;
+    > div.flex-item {
+      position: relative;
+      overflow: hidden;
+      > a {
+        border: 0.01rem solid #999;
+        box-sizing: border-box;
+        margin-right: 0.05rem;
+        font-size: 0.13rem;
+        line-height: 0.22rem;
+        text-align: center;
+        &.active {
+          color: #fff;
+          background: #ff5100;
+          border-color: #ff5100;
+        }
+      }
+    }
+    > a {
+      font-size: 0.1rem;
+      color: #ff5100;
+      line-height: 0.2rem;
+      border: 0.01rem solid #999;
+      margin-left: 0.05rem;
+      position: relative;
+      overflow: hidden;
+      padding: 0 0.02rem;
+      padding-top: 0.04rem;
+      margin-right: 0.2rem;
+    }
+  }
+}

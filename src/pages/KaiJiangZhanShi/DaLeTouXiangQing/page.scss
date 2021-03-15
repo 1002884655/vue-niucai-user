@@ -1,0 +1,204 @@
+.Page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .PageContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    > .PrizeInfo {
+      padding: 0 0.15rem;
+      > div {
+        padding: 0.12rem 0;
+        border-bottom: 0.01rem solid #f7f7f7;
+        align-items: center;
+        > * {
+          margin-left: 0.15rem;
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+        > .Icon {
+          width: 0.4rem;
+          height: 0.4rem;
+          position: relative;
+          overflow: hidden;
+        }
+        > span {
+          font-size: 0.16rem;
+          font-weight: bold;
+          color: #333;
+        }
+        > .flex-item {
+          > .Time {
+            font-size: 0;
+            white-space: nowrap;
+            > span {
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 0.1rem;
+              color: #999;
+              line-height: 0.2rem;
+              margin-left: 0.2rem;
+              &:first-child {
+                margin-left: 0;
+              }
+            }
+          }
+          > .Num {
+            font-size: 0;
+            white-space: nowrap;
+            margin-top: 0.1rem;
+            > li {
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 0.1rem;
+              width: 0.2rem;
+              height: 0.2rem;
+              line-height: 0.2rem;
+              color: #fff;
+              background: #ff5200;
+              border-radius: 100%;
+              text-align: center;
+              margin-left: 0.05rem;
+              &:first-child {
+                margin-left: 0;
+              }
+              &.active {
+                background: #3f63e5;
+              }
+            }
+          }
+        }
+      }
+    }
+    > .SaleInfo {
+      margin-top: 0.1rem;
+      align-items: center;
+      > div {
+        font-size: 0;
+        white-space: nowrap;
+        text-align: center;
+        > span {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 0.12rem;
+          color: #999;
+          line-height: 0.2rem;
+          &:nth-child(2) {
+            color: #333;
+          }
+        }
+      }
+    }
+    > .ResList {
+      > span {
+        display: block;
+        text-align: center;
+        font-size: 0.15rem;
+        color: #666;
+        line-height: 0.2rem;
+        margin-top: 0.2rem;
+      }
+      > ul {
+        margin-top: 0.15rem;
+        > li {
+          align-items: center;
+          &:nth-child(2n + 1) {
+            background: #f2f2f2;
+            > span {
+              line-height: 0.3rem;
+            }
+          }
+          > span {
+            font-size: 0.12rem;
+            line-height: 0.4rem;
+            text-align: center;
+            color: #666;
+          }
+        }
+      }
+      > .Btn {
+        padding: 0 0.15rem;
+        margin-top: 0.5rem;
+        > a {
+          display: block;
+          text-align: center;
+          line-height: 0.42rem;
+          background: #ff5200;
+          border-radius: 0.06rem;
+          color: #fff;
+        }
+      }
+    }
+    > .HistoryList {
+      padding: 0 0.15rem;
+      > li {
+        padding: 0.12rem 0;
+        border-bottom: 0.01rem solid #f7f7f7;
+        align-items: center;
+        > * {
+          margin-left: 0.15rem;
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+        > .Icon {
+          width: 0.4rem;
+          height: 0.4rem;
+          position: relative;
+          overflow: hidden;
+        }
+        > span {
+          font-size: 0.16rem;
+          font-weight: bold;
+          color: #333;
+        }
+        > .flex-item {
+          > .Time {
+            font-size: 0;
+            white-space: nowrap;
+            > span {
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 0.1rem;
+              color: #999;
+              line-height: 0.2rem;
+              margin-left: 0.2rem;
+              &:first-child {
+                margin-left: 0;
+              }
+            }
+          }
+          > .Num {
+            font-size: 0;
+            white-space: nowrap;
+            margin-top: 0.1rem;
+            > li {
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 0.1rem;
+              width: 0.2rem;
+              height: 0.2rem;
+              line-height: 0.2rem;
+              color: #fff;
+              background: #ff5200;
+              border-radius: 100%;
+              text-align: center;
+              margin-left: 0.05rem;
+              &:first-child {
+                margin-left: 0;
+              }
+              &.active {
+                background: #3f63e5;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
